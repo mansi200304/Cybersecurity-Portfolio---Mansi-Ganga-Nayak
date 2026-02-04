@@ -18,7 +18,7 @@ Do not make assumptions on important decisions — get clarification first.
 
 ## Workflow Steps
 
-### [ ] Step: Technical Specification
+### [x] Step: Technical Specification
 <!-- chat-id: e47db64d-0252-4155-b2e0-01a62530d84e -->
 
 Assess the task's difficulty, as underestimating it leads to poor outcomes.
@@ -49,17 +49,110 @@ Rule of thumb for step size: each step should represent a coherent unit of work 
 
 Save to `{@artifacts_path}/plan.md`. If the feature is trivial and doesn't warrant this breakdown, keep the Implementation step below as is.
 
+**Status**: ✅ Completed - See spec.md for full technical specification
+
 ---
 
-### [ ] Step: Implementation
+### [ ] Step: Project Setup and Structure
 
-Implement the task according to the technical specification and general engineering best practices.
+Initialize the project structure and create base configuration files.
 
-1. Break the task into steps where possible.
-2. Implement the required changes in the codebase.
-3. Add and run relevant tests and linters.
-4. Perform basic manual verification if applicable.
-5. After completion, write a report to `{@artifacts_path}/report.md` describing:
-   - What was implemented
-   - How the solution was tested
-   - The biggest issues or challenges encountered
+- [ ] Create .gitignore file
+- [ ] Set up directory structure (css/, js/, assets/)
+- [ ] Create base HTML structure in index.html
+- [ ] Set up CSS file architecture (style.css, loading.css, robot.css)
+- [ ] Create JavaScript module files (main.js, loading.js, robot-tracker.js)
+
+**Verification**: Directory structure matches spec.md, all base files created
+
+---
+
+### [ ] Step: Create Robot SVG Asset
+
+Design and implement the grey/silver robot illustration with separable head component.
+
+- [ ] Create robot.svg with modular structure (body group, head group)
+- [ ] Style robot in grey/silver color scheme
+- [ ] Ensure head element has unique ID for JavaScript targeting
+- [ ] Test SVG renders correctly in browser
+
+**Verification**: SVG displays correctly, head element is independently targetable
+
+---
+
+### [ ] Step: Implement Loading Screen
+
+Build the "Gaming Center" loading screen with animations.
+
+- [ ] Create HTML structure for loading overlay
+- [ ] Style loading screen with cyberpunk/gaming aesthetic
+- [ ] Implement CSS animations (glitch effects, fade-in/fade-out)
+- [ ] Write loading.js controller with show/hide/onComplete methods
+- [ ] Set appropriate timing (2-3 second display minimum)
+
+**Verification**: Loading screen appears on page load, animates smoothly, transitions away
+
+---
+
+### [ ] Step: Implement Robot Cursor Tracking
+
+Build the cursor tracking system that makes the robot head follow the mouse.
+
+- [ ] Integrate robot SVG into index.html
+- [ ] Position robot in background (fixed positioning)
+- [ ] Implement RobotTracker class in robot-tracker.js
+- [ ] Add mousemove event listener
+- [ ] Calculate angle from cursor to robot head center
+- [ ] Apply smooth rotation transform to head element
+- [ ] Add CSS transitions for smooth movement
+
+**Verification**: Robot head smoothly follows cursor movement across the entire viewport
+
+---
+
+### [ ] Step: Build Portfolio Content and Layout
+
+Create the main portfolio sections with responsive layout.
+
+- [ ] Implement semantic HTML structure (header, sections, footer)
+- [ ] Create navigation bar
+- [ ] Build hero section
+- [ ] Add About section
+- [ ] Add Projects/Portfolio section with placeholder content
+- [ ] Add Skills section
+- [ ] Add Contact section
+- [ ] Implement responsive grid/flexbox layout
+- [ ] Apply cybersecurity theme styling (dark bg, neon accents, monospace fonts)
+
+**Verification**: All sections render correctly, layout is responsive on mobile/tablet/desktop
+
+---
+
+### [ ] Step: Add Interactive Elements and Polish
+
+Implement interactive features and refine the user experience.
+
+- [ ] Add smooth scroll navigation
+- [ ] Implement hover effects on navigation and cards
+- [ ] Add glitch/neon effects on interaction
+- [ ] Implement section transition animations
+- [ ] Optimize performance (will-change, requestAnimationFrame if needed)
+- [ ] Test cross-browser compatibility
+
+**Verification**: Interactions are smooth, effects work across browsers, no performance issues
+
+---
+
+### [ ] Step: Final Testing and Report
+
+Perform comprehensive testing and document the implementation.
+
+- [ ] Validate HTML (W3C validator)
+- [ ] Test all interactive features
+- [ ] Test responsive design on multiple viewports
+- [ ] Run Lighthouse audit
+- [ ] Verify accessibility (contrast, keyboard navigation)
+- [ ] Cross-browser testing (Chrome, Firefox, Safari)
+- [ ] Write report.md with implementation summary, testing results, and challenges
+
+**Verification**: All tests pass, Lighthouse scores acceptable, report.md completed
