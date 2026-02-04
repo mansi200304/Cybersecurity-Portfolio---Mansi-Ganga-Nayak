@@ -115,6 +115,7 @@ Build the cursor tracking system that makes the robot head follow the mouse.
 ---
 
 ### [ ] Step: Build Portfolio Content and Layout
+<!-- chat-id: 80512744-72f4-43d5-a304-90fc40ec6c8a -->
 
 Create the main portfolio sections with responsive layout.
 
