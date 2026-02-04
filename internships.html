@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Cybersecurity Internships & Work Experience">
-    <title>Internships | Cybersecurity Portfolio</title>
+    <title>Internships | Mansi Ganga Nayak</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/robot.css">
 </head>
 <body>
-    <div id="robot-container">
+    <div id="cyber-background">
+        <canvas id="matrix-canvas"></canvas>
+        <div class="circuit-overlay"></div>
+    </div>
+    
+    <div id="robot-container" style="display: none;">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400" width="300" height="400">
             <defs>
                 <linearGradient id="bodyGradient" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -180,76 +184,108 @@
                 <div class="experience-timeline">
                     <div class="experience-item">
                         <div class="experience-header">
-                            <h3 class="experience-title">Security Research Intern</h3>
-                            <span class="experience-company">[TECH_CORP]</span>
-                            <span class="experience-date">Summer 2024</span>
+                            <h3 class="experience-title">Research Intern</h3>
+                            <span class="experience-company">IIT Kanpur</span>
+                            <span class="experience-date">May 2023 - July 2023</span>
                         </div>
                         <div class="experience-description">
                             <p>
-                                Conducted vulnerability assessments and penetration testing on enterprise applications.
-                                Developed automated security testing tools using Python and contributed to the company's
-                                bug bounty program.
+                                Conducted advanced research in cybersecurity at one of India's premier technology institutes.
+                                Worked on cutting-edge security research projects, contributing to publications and developing
+                                novel security solutions for modern cyber threats.
                             </p>
                             <ul class="experience-highlights">
-                                <li><span class="bullet">▹</span>Identified and reported 15+ critical vulnerabilities</li>
-                                <li><span class="bullet">▹</span>Automated security scan processes, reducing testing time by 40%</li>
-                                <li><span class="bullet">▹</span>Collaborated with development teams on secure coding practices</li>
+                                <li><span class="bullet">▹</span>Developed privacy-preserving techniques for large-scale data analytics</li>
+                                <li><span class="bullet">▹</span>Implemented differential privacy mechanisms using Python</li>
+                                <li><span class="bullet">▹</span>Contributed to research publications in international journals</li>
+                                <li><span class="bullet">▹</span>Collaborated with faculty and PhD students on security research</li>
                             </ul>
                             <div class="experience-tech">
                                 <span class="tech-tag">Python</span>
-                                <span class="tech-tag">Burp Suite</span>
+                                <span class="tech-tag">Cryptography</span>
+                                <span class="tech-tag">Differential Privacy</span>
+                                <span class="tech-tag">Research & Development</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <h3 class="experience-title">Data Analyst Intern</h3>
+                            <span class="experience-company">Celebal Technologies</span>
+                            <span class="experience-date">June 2022 - August 2022</span>
+                        </div>
+                        <div class="experience-description">
+                            <p>
+                                Worked on data analytics and security analysis projects for enterprise clients.
+                                Developed automated data processing pipelines and performed security assessments
+                                on data infrastructure and applications.
+                            </p>
+                            <ul class="experience-highlights">
+                                <li><span class="bullet">▹</span>Built data analytics dashboards using Python and SQL</li>
+                                <li><span class="bullet">▹</span>Conducted security audits on data storage and processing systems</li>
+                                <li><span class="bullet">▹</span>Automated data validation and anomaly detection workflows</li>
+                                <li><span class="bullet">▹</span>Collaborated with cross-functional teams on client projects</li>
+                            </ul>
+                            <div class="experience-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">SQL</span>
+                                <span class="tech-tag">Data Analytics</span>
+                                <span class="tech-tag">Security Auditing</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <h3 class="experience-title">Software Development Intern</h3>
+                            <span class="experience-company">CSM Technologies</span>
+                            <span class="experience-date">December 2021 - February 2022</span>
+                        </div>
+                        <div class="experience-description">
+                            <p>
+                                Contributed to full-stack development projects with a focus on secure coding practices
+                                and application security. Implemented security features and participated in code reviews
+                                to identify and fix security vulnerabilities.
+                            </p>
+                            <ul class="experience-highlights">
+                                <li><span class="bullet">▹</span>Developed secure web applications using modern frameworks</li>
+                                <li><span class="bullet">▹</span>Implemented authentication and authorization mechanisms</li>
+                                <li><span class="bullet">▹</span>Conducted security code reviews and vulnerability assessments</li>
+                                <li><span class="bullet">▹</span>Applied OWASP security best practices in development</li>
+                            </ul>
+                            <div class="experience-tech">
+                                <span class="tech-tag">Java</span>
+                                <span class="tech-tag">Web Development</span>
                                 <span class="tech-tag">OWASP</span>
-                                <span class="tech-tag">CI/CD Security</span>
+                                <span class="tech-tag">Secure Coding</span>
                             </div>
                         </div>
                     </div>
 
                     <div class="experience-item">
                         <div class="experience-header">
-                            <h3 class="experience-title">Cybersecurity Analyst Intern</h3>
-                            <span class="experience-company">[SECURITY_FIRM]</span>
-                            <span class="experience-date">Fall 2023</span>
+                            <h3 class="experience-title">Technical Intern</h3>
+                            <span class="experience-company">Renison</span>
+                            <span class="experience-date">June 2021 - August 2021</span>
                         </div>
                         <div class="experience-description">
                             <p>
-                                Assisted in threat hunting operations and security incident response. Analyzed network
-                                traffic patterns and developed custom detection rules for the SIEM platform.
+                                Early career internship focused on learning software development fundamentals,
+                                security principles, and professional software engineering practices. Gained hands-on
+                                experience with various technologies and development methodologies.
                             </p>
                             <ul class="experience-highlights">
-                                <li><span class="bullet">▹</span>Created 20+ custom SIEM detection rules</li>
-                                <li><span class="bullet">▹</span>Investigated and documented 50+ security incidents</li>
-                                <li><span class="bullet">▹</span>Participated in red team exercises and threat simulations</li>
+                                <li><span class="bullet">▹</span>Developed software modules following industry best practices</li>
+                                <li><span class="bullet">▹</span>Participated in agile development processes and sprint planning</li>
+                                <li><span class="bullet">▹</span>Learned about secure software development lifecycle</li>
+                                <li><span class="bullet">▹</span>Contributed to documentation and testing efforts</li>
                             </ul>
                             <div class="experience-tech">
-                                <span class="tech-tag">Splunk</span>
-                                <span class="tech-tag">Wireshark</span>
-                                <span class="tech-tag">MITRE ATT&CK</span>
-                                <span class="tech-tag">Incident Response</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="experience-item">
-                        <div class="experience-header">
-                            <h3 class="experience-title">Network Security Intern</h3>
-                            <span class="experience-company">[ENTERPRISE_CO]</span>
-                            <span class="experience-date">Summer 2023</span>
-                        </div>
-                        <div class="experience-description">
-                            <p>
-                                Supported network security infrastructure maintenance and firewall rule optimization.
-                                Conducted security audits and assisted in implementing zero-trust architecture principles.
-                            </p>
-                            <ul class="experience-highlights">
-                                <li><span class="bullet">▹</span>Optimized firewall rules, improving network performance by 25%</li>
-                                <li><span class="bullet">▹</span>Documented security procedures and best practices</li>
-                                <li><span class="bullet">▹</span>Assisted in deploying multi-factor authentication across the organization</li>
-                            </ul>
-                            <div class="experience-tech">
-                                <span class="tech-tag">Cisco</span>
-                                <span class="tech-tag">Palo Alto</span>
-                                <span class="tech-tag">Zero Trust</span>
-                                <span class="tech-tag">Network Security</span>
+                                <span class="tech-tag">Software Development</span>
+                                <span class="tech-tag">Agile Methodology</span>
+                                <span class="tech-tag">Testing</span>
+                                <span class="tech-tag">Documentation</span>
                             </div>
                         </div>
                     </div>
@@ -258,7 +294,7 @@
         </section>
     </main>
 
+    <script src="js/cyber-background.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/robot-tracker.js"></script>
 </body>
 </html>

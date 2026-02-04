@@ -6,12 +6,12 @@ class LoadingScreen {
         this.minDisplayTime = 5000;
         this.startTime = Date.now();
         this.messages = [
-            'INITIALIZING SYSTEMS...',
-            'SCANNING NETWORK...',
-            'CHECKING SECURITY PROTOCOLS...',
-            'LOADING DEFENSE MATRIX...',
-            'VERIFYING CREDENTIALS...',
-            'ACCESS GRANTED'
+            'INITIALIZING SECURE ENVIRONMENT...',
+            'SCANNING NETWORK ARCHITECTURE...',
+            'VERIFYING SECURITY CREDENTIALS...',
+            'LOADING CYBERSECURITY PORTFOLIO...',
+            'ESTABLISHING SECURE CONNECTION...',
+            'ACCESS GRANTED - WELCOME'
         ];
         this.currentMessageIndex = 0;
         this.messageInterval = null;
