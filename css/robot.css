@@ -4,4 +4,11 @@
     right: 50px;
     z-index: 0;
     pointer-events: none;
+    opacity: 0.8;
+}
+
+#robot-head {
+    transform-origin: 150px 100px;
+    transition: transform 0.15s ease-out;
+    will-change: transform;
 }
