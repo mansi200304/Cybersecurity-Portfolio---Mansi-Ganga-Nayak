@@ -1,14 +1,38 @@
 #robot-container {
     position: fixed;
-    bottom: 50px;
-    right: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 0;
     pointer-events: none;
-    opacity: 0.8;
+    opacity: 0.3;
+}
+
+#robot-container svg {
+    width: 600px;
+    height: 800px;
+    filter: drop-shadow(0 0 30px rgba(0, 255, 159, 0.3));
 }
 
 #robot-head {
     transform-origin: 150px 100px;
     transition: transform 0.15s ease-out;
     will-change: transform;
+}
+
+@media (max-width: 1024px) {
+    #robot-container svg {
+        width: 450px;
+        height: 600px;
+    }
+}
+
+@media (max-width: 768px) {
+    #robot-container svg {
+        width: 300px;
+        height: 400px;
+    }
+    #robot-container {
+        opacity: 0.2;
+    }
 }

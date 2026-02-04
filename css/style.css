@@ -5,13 +5,436 @@
 }
 
 body {
-    font-family: 'Courier New', monospace;
+    font-family: 'Courier New', 'Fira Code', monospace;
     background-color: #0a0a0a;
     color: #e0e0e0;
     overflow-x: hidden;
+    line-height: 1.6;
 }
 
 #main-content {
     position: relative;
     z-index: 1;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.section {
+    padding: 6rem 0;
+    min-height: 100vh;
+}
+
+.section-dark {
+    background-color: #0f0f0f;
+}
+
+.nav-link.active {
+    color: #00ff9f !important;
+    text-shadow: 0 0 10px #00ff9f;
+}
+
+.page-hero {
+    padding: 8rem 0 4rem;
+    text-align: center;
+    border-bottom: 2px solid #00ff9f;
+    margin-bottom: 4rem;
+}
+
+.page-title {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    color: #00ff9f;
+    position: relative;
+    display: inline-block;
+}
+
+.page-subtitle {
+    font-size: 1.2rem;
+    color: #00d4ff;
+    opacity: 0.8;
+}
+
+.experience-timeline {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.experience-timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(180deg, #00ff9f 0%, #00d4ff 100%);
+}
+
+.experience-item {
+    position: relative;
+    margin-bottom: 4rem;
+    padding: 2rem;
+    background: rgba(0, 255, 159, 0.05);
+    border: 1px solid #00ff9f;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.experience-item::before {
+    content: '';
+    position: absolute;
+    left: -2.5rem;
+    top: 2rem;
+    width: 12px;
+    height: 12px;
+    background: #00ff9f;
+    border-radius: 50%;
+    box-shadow: 0 0 15px #00ff9f;
+}
+
+.experience-item:hover {
+    transform: translateX(10px);
+    background: rgba(0, 255, 159, 0.1);
+    box-shadow: 0 0 30px rgba(0, 255, 159, 0.3);
+}
+
+.experience-header {
+    margin-bottom: 1rem;
+}
+
+.experience-title {
+    font-size: 1.8rem;
+    color: #00ff9f;
+    margin-bottom: 0.5rem;
+}
+
+.experience-company {
+    color: #00d4ff;
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+
+.experience-date {
+    color: #888;
+    font-size: 1rem;
+}
+
+.experience-description p {
+    margin-bottom: 1rem;
+    color: #ccc;
+}
+
+.experience-highlights {
+    list-style: none;
+    margin: 1.5rem 0;
+}
+
+.experience-highlights li {
+    padding: 0.5rem 0;
+    color: #ddd;
+}
+
+.bullet {
+    color: #00ff9f;
+    margin-right: 0.5rem;
+}
+
+.experience-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+.tech-tag {
+    padding: 0.4rem 1rem;
+    background: rgba(0, 212, 255, 0.1);
+    border: 1px solid #00d4ff;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    color: #00d4ff;
+    transition: all 0.3s ease;
+}
+
+.tech-tag:hover {
+    background: rgba(0, 212, 255, 0.2);
+    box-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+}
+
+.papers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    gap: 2rem;
+}
+
+.paper-card {
+    background: rgba(0, 255, 159, 0.05);
+    border: 1px solid #00ff9f;
+    border-radius: 8px;
+    padding: 2rem;
+    transition: all 0.3s ease;
+}
+
+.paper-card:hover {
+    transform: translateY(-5px);
+    background: rgba(0, 255, 159, 0.1);
+    box-shadow: 0 10px 40px rgba(0, 255, 159, 0.2);
+}
+
+.paper-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.paper-status {
+    padding: 0.3rem 0.8rem;
+    background: rgba(0, 255, 159, 0.2);
+    border: 1px solid #00ff9f;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    color: #00ff9f;
+    font-weight: bold;
+}
+
+.paper-status-review {
+    background: rgba(255, 165, 0, 0.2);
+    border-color: #ffa500;
+    color: #ffa500;
+}
+
+.paper-year {
+    color: #888;
+    font-size: 0.9rem;
+}
+
+.paper-title {
+    font-size: 1.4rem;
+    color: #00ff9f;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+.paper-authors {
+    color: #aaa;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.author-me {
+    color: #00d4ff;
+    font-weight: bold;
+}
+
+.paper-venue {
+    color: #00d4ff;
+    font-style: italic;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+}
+
+.paper-abstract {
+    color: #ccc;
+    margin: 1rem 0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.paper-links {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.paper-link {
+    color: #00d4ff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.paper-link:hover {
+    color: #00ff9f;
+    text-shadow: 0 0 10px #00ff9f;
+}
+
+.paper-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.tag {
+    padding: 0.3rem 0.8rem;
+    background: rgba(0, 212, 255, 0.1);
+    border: 1px solid #00d4ff;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    color: #00d4ff;
+}
+
+.patents-list {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.patent-item {
+    background: rgba(0, 255, 159, 0.05);
+    border: 2px solid #00ff9f;
+    border-radius: 8px;
+    padding: 2.5rem;
+    transition: all 0.3s ease;
+}
+
+.patent-item:hover {
+    background: rgba(0, 255, 159, 0.1);
+    box-shadow: 0 0 40px rgba(0, 255, 159, 0.2);
+    border-color: #00d4ff;
+}
+
+.patent-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.patent-status {
+    padding: 0.4rem 1rem;
+    background: rgba(0, 255, 159, 0.2);
+    border: 1px solid #00ff9f;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    color: #00ff9f;
+    font-weight: bold;
+}
+
+.patent-status-pending {
+    background: rgba(255, 165, 0, 0.2);
+    border-color: #ffa500;
+    color: #ffa500;
+}
+
+.patent-number {
+    color: #00d4ff;
+    font-family: monospace;
+    font-size: 0.95rem;
+}
+
+.patent-title {
+    font-size: 1.8rem;
+    color: #00ff9f;
+    margin-bottom: 1.5rem;
+    line-height: 1.4;
+}
+
+.patent-meta {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.3);
+    border-left: 3px solid #00d4ff;
+}
+
+.patent-meta div {
+    margin-bottom: 0.5rem;
+    color: #ccc;
+}
+
+.patent-meta strong {
+    color: #00d4ff;
+}
+
+.patent-dates {
+    display: flex;
+    gap: 2rem;
+}
+
+.patent-abstract {
+    margin-bottom: 1.5rem;
+}
+
+.patent-abstract strong {
+    color: #00ff9f;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.patent-abstract p {
+    color: #ccc;
+    line-height: 1.7;
+}
+
+.patent-claims {
+    margin-bottom: 1.5rem;
+}
+
+.patent-claims strong {
+    color: #00ff9f;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.patent-claims ul {
+    list-style: none;
+    padding-left: 1rem;
+}
+
+.patent-claims li {
+    padding: 0.5rem 0;
+    color: #ddd;
+    position: relative;
+}
+
+.patent-claims li::before {
+    content: '▹';
+    position: absolute;
+    left: -1rem;
+    color: #00d4ff;
+}
+
+.patent-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.patent-link {
+    color: #00d4ff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.patent-link:hover {
+    color: #00ff9f;
+    text-shadow: 0 0 10px #00ff9f;
+}
+
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 2.5rem;
+    }
+    
+    .papers-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .experience-timeline {
+        padding-left: 1rem;
+    }
+    
+    .experience-item::before {
+        left: -1.5rem;
+    }
+    
+    .patent-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
 }

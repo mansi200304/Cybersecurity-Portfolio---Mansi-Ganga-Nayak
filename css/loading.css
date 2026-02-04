@@ -70,6 +70,8 @@
     color: #00d4ff;
     margin-bottom: 2rem;
     animation: pulse 1.5s ease-in-out infinite;
+    transition: opacity 0.15s ease-in-out;
+    min-height: 1.5rem;
 }
 
 .loading-bar-container {

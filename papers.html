@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Research Papers & Publications">
+    <title>Research Papers | Cybersecurity Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/robot.css">
+</head>
+<body>
+    <div id="robot-container">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400" width="300" height="400">
+            <defs>
+                <linearGradient id="bodyGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#E0E0E0;stop-opacity:1" />
+                    <stop offset="50%" style="stop-color:#B8B8B8;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#909090;stop-opacity:1" />
+                </linearGradient>
+                <linearGradient id="headGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#F0F0F0;stop-opacity:1" />
+                    <stop offset="50%" style="stop-color:#C8C8C8;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#A0A0A0;stop-opacity:1" />
+                </linearGradient>
+                <linearGradient id="darkMetal" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#707070;stop-opacity:1" />
+                    <stop offset="50%" style="stop-color:#505050;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#303030;stop-opacity:1" />
+                </linearGradient>
+                <radialGradient id="glowGreen" cx="50%" cy="50%" r="50%">
+                    <stop offset="0%" style="stop-color:#00FF00;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#00FF00;stop-opacity:0.3" />
+                </radialGradient>
+                <radialGradient id="glowCyan" cx="50%" cy="50%" r="50%">
+                    <stop offset="0%" style="stop-color:#00FFFF;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#00FFFF;stop-opacity:0.3" />
+                </radialGradient>
+                <filter id="metallic">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+                    <feOffset dx="2" dy="2" result="offsetblur"/>
+                    <feFlood flood-color="#000000" flood-opacity="0.4"/>
+                    <feComposite in2="offsetblur" operator="in"/>
+                    <feMerge>
+                        <feMergeNode/>
+                        <feMergeNode in="SourceGraphic"/>
+                    </feMerge>
+                </filter>
+            </defs>
+            
+            <g id="robot-body">
+                <rect x="75" y="180" width="150" height="180" rx="15" fill="url(#bodyGradient)" stroke="#505050" stroke-width="4" filter="url(#metallic)"/>
+                <rect x="80" y="185" width="140" height="170" rx="12" fill="none" stroke="#F0F0F0" stroke-width="1" opacity="0.3"/>
+                
+                <rect x="45" y="200" width="35" height="100" rx="8" fill="url(#bodyGradient)" stroke="#505050" stroke-width="3" filter="url(#metallic)"/>
+                <rect x="220" y="200" width="35" height="100" rx="8" fill="url(#bodyGradient)" stroke="#505050" stroke-width="3" filter="url(#metallic)"/>
+                
+                <rect x="48" y="205" width="29" height="90" rx="6" fill="none" stroke="#F0F0F0" stroke-width="1" opacity="0.2"/>
+                <rect x="223" y="205" width="29" height="90" rx="6" fill="none" stroke="#F0F0F0" stroke-width="1" opacity="0.2"/>
+                
+                <circle cx="62" cy="280" r="5" fill="url(#darkMetal)" stroke="#303030" stroke-width="1.5"/>
+                <circle cx="62" cy="320" r="5" fill="url(#darkMetal)" stroke="#303030" stroke-width="1.5"/>
+                <circle cx="238" cy="280" r="5" fill="url(#darkMetal)" stroke="#303030" stroke-width="1.5"/>
+                <circle cx="238" cy="320" r="5" fill="url(#darkMetal)" stroke="#303030" stroke-width="1.5"/>
+                
+                <rect x="85" y="365" width="45" height="32" rx="5" fill="url(#bodyGradient)" stroke="#505050" stroke-width="3" filter="url(#metallic)"/>
+                <rect x="170" y="365" width="45" height="32" rx="5" fill="url(#bodyGradient)" stroke="#505050" stroke-width="3" filter="url(#metallic)"/>
+                <rect x="88" y="368" width="39" height="26" rx="3" fill="none" stroke="#F0F0F0" stroke-width="1" opacity="0.2"/>
+                <rect x="173" y="368" width="39" height="26" rx="3" fill="none" stroke="#F0F0F0" stroke-width="1" opacity="0.2"/>
+                
+                <rect x="95" y="205" width="110" height="70" rx="8" fill="url(#darkMetal)" stroke="#00FF00" stroke-width="2.5" opacity="0.9" filter="url(#metallic)"/>
+                <rect x="100" y="210" width="100" height="60" rx="5" fill="#1A1A1A" stroke="#00FF00" stroke-width="1" opacity="0.5"/>
+                
+                <line x1="110" y1="222" x2="190" y2="222" stroke="#00FF00" stroke-width="1.5" opacity="0.7"/>
+                <line x1="110" y1="232" x2="180" y2="232" stroke="#00FF00" stroke-width="1.5" opacity="0.7"/>
+                <line x1="110" y1="242" x2="190" y2="242" stroke="#00FF00" stroke-width="1.5" opacity="0.7"/>
+                <line x1="110" y1="252" x2="170" y2="252" stroke="#00FF00" stroke-width="1.5" opacity="0.7"/>
+                <line x1="110" y1="262" x2="185" y2="262" stroke="#00FF00" stroke-width="1.5" opacity="0.7"/>
+                
+                <circle cx="110" cy="222" r="2" fill="url(#glowGreen)"/>
+                <circle cx="110" cy="232" r="2" fill="url(#glowGreen)"/>
+                <circle cx="110" cy="242" r="2" fill="url(#glowGreen)"/>
+                <circle cx="110" cy="252" r="2" fill="url(#glowGreen)"/>
+                <circle cx="110" cy="262" r="2" fill="url(#glowGreen)"/>
+                
+                <circle cx="115" cy="315" r="20" fill="url(#glowCyan)" opacity="0.4" filter="url(#metallic)"/>
+                <circle cx="115" cy="315" r="12" fill="url(#glowCyan)" opacity="0.8"/>
+                <circle cx="115" cy="315" r="6" fill="#00FFFF"/>
+                <circle cx="185" cy="315" r="20" fill="url(#glowCyan)" opacity="0.4" filter="url(#metallic)"/>
+                <circle cx="185" cy="315" r="12" fill="url(#glowCyan)" opacity="0.8"/>
+                <circle cx="185" cy="315" r="6" fill="#00FFFF"/>
+                
+                <rect x="140" y="330" width="20" height="25" rx="3" fill="url(#darkMetal)" stroke="#00FFFF" stroke-width="1.5" opacity="0.8"/>
+                <circle cx="150" cy="342" r="3" fill="#00FFFF" opacity="0.9"/>
+            </g>
+            
+            <g id="robot-neck">
+                <rect x="130" y="150" width="40" height="35" rx="5" fill="url(#bodyGradient)" stroke="#505050" stroke-width="3" filter="url(#metallic)"/>
+                <rect x="133" y="153" width="34" height="29" rx="3" fill="none" stroke="#F0F0F0" stroke-width="1" opacity="0.2"/>
+                <circle cx="150" cy="167" r="5" fill="url(#darkMetal)" stroke="#303030" stroke-width="1"/>
+                <line x1="135" y1="158" x2="165" y2="158" stroke="#707070" stroke-width="1" opacity="0.5"/>
+                <line x1="135" y1="176" x2="165" y2="176" stroke="#707070" stroke-width="1" opacity="0.5"/>
+            </g>
+            
+            <g id="robot-head" transform-origin="150 100">
+                <rect x="95" y="55" width="110" height="100" rx="12" fill="url(#headGradient)" stroke="#505050" stroke-width="4" filter="url(#metallic)"/>
+                <rect x="100" y="60" width="100" height="90" rx="10" fill="none" stroke="#F0F0F0" stroke-width="1" opacity="0.3"/>
+                
+                <rect x="108" y="72" width="38" height="35" rx="5" fill="url(#darkMetal)" stroke="#00FFFF" stroke-width="2.5" filter="url(#metallic)"/>
+                <rect x="154" y="72" width="38" height="35" rx="5" fill="url(#darkMetal)" stroke="#00FFFF" stroke-width="2.5" filter="url(#metallic)"/>
+                
+                <rect x="112" y="76" width="30" height="27" rx="3" fill="#0A0A0A" stroke="#00FFFF" stroke-width="1" opacity="0.7"/>
+                <rect x="158" y="76" width="30" height="27" rx="3" fill="#0A0A0A" stroke="#00FFFF" stroke-width="1" opacity="0.7"/>
+                
+                <circle cx="127" cy="89" r="12" fill="url(#glowCyan)" opacity="0.5"/>
+                <circle cx="127" cy="89" r="8" fill="url(#glowCyan)" opacity="0.9"/>
+                <circle cx="127" cy="89" r="4" fill="#00FFFF"/>
+                <circle cx="173" cy="89" r="12" fill="url(#glowCyan)" opacity="0.5"/>
+                <circle cx="173" cy="89" r="8" fill="url(#glowCyan)" opacity="0.9"/>
+                <circle cx="173" cy="89" r="4" fill="#00FFFF"/>
+                
+                <circle cx="124" cy="86" r="2" fill="#FFFFFF" opacity="0.8"/>
+                <circle cx="170" cy="86" r="2" fill="#FFFFFF" opacity="0.8"/>
+                
+                <rect x="112" y="118" width="76" height="20" rx="10" fill="url(#darkMetal)" stroke="#505050" stroke-width="2.5" filter="url(#metallic)"/>
+                <rect x="116" y="122" width="68" height="12" rx="6" fill="#2A2A2A" stroke="#00FF00" stroke-width="1"/>
+                
+                <rect x="122" y="126" width="8" height="4" rx="1" fill="url(#glowGreen)"/>
+                <rect x="134" y="126" width="8" height="4" rx="1" fill="url(#glowGreen)"/>
+                <rect x="146" y="126" width="8" height="4" rx="1" fill="url(#glowGreen)"/>
+                <rect x="158" y="126" width="8" height="4" rx="1" fill="url(#glowGreen)"/>
+                <rect x="170" y="126" width="8" height="4" rx="1" fill="url(#glowGreen)"/>
+                
+                <polygon points="90,78 95,70 95,86" fill="url(#bodyGradient)" stroke="#505050" stroke-width="2" filter="url(#metallic)"/>
+                <polygon points="210,78 205,70 205,86" fill="url(#bodyGradient)" stroke="#505050" stroke-width="2" filter="url(#metallic)"/>
+                
+                <circle cx="92" cy="78" r="3" fill="#00FFFF" opacity="0.6"/>
+                <circle cx="208" cy="78" r="3" fill="#00FFFF" opacity="0.6"/>
+                
+                <line x1="105" y1="145" x2="115" y2="150" stroke="#00FFFF" stroke-width="1.5" opacity="0.7"/>
+                <line x1="185" y1="145" x2="195" y2="150" stroke="#00FFFF" stroke-width="1.5" opacity="0.7"/>
+                <circle cx="115" cy="150" r="2" fill="#00FFFF" opacity="0.8"/>
+                <circle cx="195" cy="150" r="2" fill="#00FFFF" opacity="0.8"/>
+                
+                <rect x="140" y="65" width="20" height="8" rx="2" fill="url(#darkMetal)" stroke="#303030" stroke-width="1"/>
+                <circle cx="145" cy="69" r="1.5" fill="#00FF00"/>
+                <circle cx="150" cy="69" r="1.5" fill="#FF0000"/>
+                <circle cx="155" cy="69" r="1.5" fill="#00FF00"/>
+            </g>
+        </svg>
+    </div>
+    
+    <nav id="main-nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-bracket">[</span>
+                <span class="logo-text">CYBER_SEC</span>
+                <span class="logo-bracket">]</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="internships.html" class="nav-link">Internships</a></li>
+                <li><a href="papers.html" class="nav-link active">Papers</a></li>
+                <li><a href="patents.html" class="nav-link">Patents</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="page-title glitch" data-text="RESEARCH PAPERS">RESEARCH PAPERS</h1>
+                <p class="page-subtitle">
+                    <span class="code-comment">// Published Research & Academic Contributions</span>
+                </p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="papers-grid">
+                    <div class="paper-card">
+                        <div class="paper-header">
+                            <span class="paper-status">[PUBLISHED]</span>
+                            <span class="paper-year">2024</span>
+                        </div>
+                        <h3 class="paper-title">
+                            Advanced Machine Learning Techniques for Zero-Day Malware Detection
+                        </h3>
+                        <p class="paper-authors">
+                            <span class="author-me">Your Name</span>, Co-Author Name, Another Author
+                        </p>
+                        <p class="paper-venue">
+                            International Conference on Cybersecurity and Privacy (ICCP 2024)
+                        </p>
+                        <p class="paper-abstract">
+                            This paper presents a novel machine learning approach for detecting zero-day malware using
+                            behavioral analysis and deep neural networks. Our model achieved 97.3% accuracy on a dataset
+                            of 10,000+ malware samples.
+                        </p>
+                        <div class="paper-links">
+                            <a href="#" class="paper-link">[PDF]</a>
+                            <a href="#" class="paper-link">[Code]</a>
+                            <a href="#" class="paper-link">[Cite]</a>
+                        </div>
+                        <div class="paper-tags">
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">Malware Detection</span>
+                            <span class="tag">Deep Learning</span>
+                        </div>
+                    </div>
+
+                    <div class="paper-card">
+                        <div class="paper-header">
+                            <span class="paper-status">[PUBLISHED]</span>
+                            <span class="paper-year">2023</span>
+                        </div>
+                        <h3 class="paper-title">
+                            Blockchain-Based Authentication for IoT Devices: A Security Analysis
+                        </h3>
+                        <p class="paper-authors">
+                            <span class="author-me">Your Name</span>, Advisor Name
+                        </p>
+                        <p class="paper-venue">
+                            Journal of Information Security (JIS), Vol. 15, Issue 3
+                        </p>
+                        <p class="paper-abstract">
+                            We propose and evaluate a blockchain-based authentication mechanism for IoT devices that
+                            provides decentralized trust without compromising performance. Experimental results show
+                            minimal latency overhead while significantly improving security.
+                        </p>
+                        <div class="paper-links">
+                            <a href="#" class="paper-link">[PDF]</a>
+                            <a href="#" class="paper-link">[DOI]</a>
+                            <a href="#" class="paper-link">[Cite]</a>
+                        </div>
+                        <div class="paper-tags">
+                            <span class="tag">Blockchain</span>
+                            <span class="tag">IoT Security</span>
+                            <span class="tag">Authentication</span>
+                        </div>
+                    </div>
+
+                    <div class="paper-card">
+                        <div class="paper-header">
+                            <span class="paper-status paper-status-review">[UNDER REVIEW]</span>
+                            <span class="paper-year">2024</span>
+                        </div>
+                        <h3 class="paper-title">
+                            Privacy-Preserving Data Analytics in Cloud Computing Environments
+                        </h3>
+                        <p class="paper-authors">
+                            <span class="author-me">Your Name</span>, Collaborator One, Collaborator Two
+                        </p>
+                        <p class="paper-venue">
+                            Submitted to IEEE Symposium on Security and Privacy 2025
+                        </p>
+                        <p class="paper-abstract">
+                            This work introduces a novel framework for conducting data analytics on encrypted data in
+                            cloud environments using homomorphic encryption and secure multi-party computation. Our
+                            approach maintains data privacy while enabling complex analytical operations.
+                        </p>
+                        <div class="paper-tags">
+                            <span class="tag">Privacy</span>
+                            <span class="tag">Cloud Security</span>
+                            <span class="tag">Homomorphic Encryption</span>
+                        </div>
+                    </div>
+
+                    <div class="paper-card">
+                        <div class="paper-header">
+                            <span class="paper-status">[PUBLISHED]</span>
+                            <span class="paper-year">2023</span>
+                        </div>
+                        <h3 class="paper-title">
+                            SQL Injection Attack Detection Using Natural Language Processing
+                        </h3>
+                        <p class="paper-authors">
+                            <span class="author-me">Your Name</span>, Research Team
+                        </p>
+                        <p class="paper-venue">
+                            ACM Conference on Computer and Communications Security (CCS 2023)
+                        </p>
+                        <p class="paper-abstract">
+                            We present an NLP-based approach to detect SQL injection attacks by analyzing query patterns
+                            and semantics. Our method outperforms traditional signature-based detection with 99.1%
+                            accuracy and minimal false positives.
+                        </p>
+                        <div class="paper-links">
+                            <a href="#" class="paper-link">[PDF]</a>
+                            <a href="#" class="paper-link">[Slides]</a>
+                            <a href="#" class="paper-link">[Cite]</a>
+                        </div>
+                        <div class="paper-tags">
+                            <span class="tag">NLP</span>
+                            <span class="tag">SQL Injection</span>
+                            <span class="tag">Web Security</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/main.js"></script>
+    <script src="js/robot-tracker.js"></script>
+</body>
+</html>
